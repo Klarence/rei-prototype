@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href="/stylesheets/all.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
+  </head>
+  <body>
+    <% include ../views/partials/header %>
+
+    <section>
+      <div class="flex-grid">
+        <div class="flex-item">
+          <button class="" onclick="location.href='/analyze'">
+            <i class="far fa-camera"></i>
+            <label>Take a Photo</label>
+          </button>
+        </div>
+        <div class="flex-item">
+          <button class="">
+          <i class="far fa-upload"></i>
+          <label>Upload an Image</label>
+        </button>
+        </div>
+        <div class="flex-item flex-2">
+          <button class="">
+            <i class="far fa-question-circle"></i>
+            <label>Help identify plants and animals from user images</label>
+          </button>
+        </div>
+      </div>
+    </section>
+    <aside class="other-apps">
+      <h1>Checkout other REI apps</h1>
+      <div class="flex-grid">
+        <div class="flex-item">
+          <div class="app-item">
+          <img src="/images/rei-hiking-project.svg" alt="REI Hiking Project Logo">
+          <label>Hiking Project</label>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="app-item">
+            <img src="/images/rei-trail-run-project.svg" alt="REI Trail Run Project Logo">
+            <label>Trail Run Project</label>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="app-item">
+            <img src="/images/rei-mountain-project.svg" alt="REI Mountain Project Logo">
+            <label>Mountain Project</label>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="app-item">
+            <img src="/images/rei-mtb-project.svg" alt="REI MTB Project Logo">
+            <label>MTB Project</label>
+          </div>
+        </div>
+        <div class="flex-item">
+          <div class="app-item">
+            <img src="/images/rei-powder-project.svg" alt="REI Powder Project Logo">
+            <label>Powder Project</label>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

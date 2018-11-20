@@ -1,0 +1,38 @@
+<section class="header">
+    <div class="header-container">
+        <i class="fas fa-bars"  onclick="ToggleMenu()"></i>
+        <img src="/images/rei_logo_white.png" alt="REI logo">
+    </div>
+</section>
+<section class="slide-menu" id="menuToggle" style="display: none;">
+    <ul>
+        <li onclick="location.href='/home'">
+            <i class="far fa-home"></i>
+            Home
+        </li>
+        <li onclick="location.href='/recent'">
+            <i class="far fa-clock"></i>
+            Recent Searches
+        </li>
+        <li>
+            <i class="far fa-map-marked"></i>
+            Location Service
+        </li>e
+        <li onclick="location.href='/leader'">
+            <i class="far fa-trophy"></i>
+            Leaderboard
+        </li>
+    </ul>
+</section>
+
+<script>
+
+    function ToggleMenu() {
+        let el = document.getElementById("menuToggle");
+        if (el.style.display === "none") {
+            el.style.display = "block";
+        } else {
+            el.style.display = "none";
+        }
+    }
+</script>

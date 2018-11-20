@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href="/stylesheets/all.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
+  </head>
+  <body class="match-mountain-lion">
+    <% include ../views/partials/header %>
+    <section >
+      <div class="tiles">
+        <div class="tile main">
+          <label>It looks like a...</label>
+        </div>
+        <div class="tile strong-match">
+          <label>Mountain Lion</label>
+          <label class="percent">84</label>
+        </div>
+        <div class="tile weak-match">
+          <label>House Cat</label>
+          <label class="percent">24</label>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

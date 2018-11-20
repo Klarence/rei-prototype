@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.splash {
+  background-image: url("/images/wildlife_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding-top: 200px;
+}
+.logo {
+  display: inline-block;
+  background-color: #000;
+  padding: 30px;
+  width: auto;
+}
+.splash .logo img {
+  width: 180px;
+}
+
+.splash .title {
+  font-size: 84px;
+  margin-top: 80px;
+  text-shadow: 4px 4px 12px #000;
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+}
+
+.header-container {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 48px;
+}
+
+.header-container img {
+  margin: 22px 36px;
+  width: 130px;
+}
+
+.other-apps {
+  padding: 50px;
+}
+.other-apps h1 {
+  font-size: 48px;
+}
+.app-item img {
+  width: 210px;
+}
+.app-item label {
+  display: block;
+  font-size: 42px;
+  margin: 8px 4px 48px 4px;
+}
+.flex-grid {
+  display: flex;
+  /*justify-content: center;*/
+  flex-wrap: wrap;
+  /*height: 240px;*/
+  align-content: flex-start;
+  /*align-items: center;*/
+}
+.flex-item {
+  display: flex;
+  /*flex: 1;*/
+  flex-grow: 1;
+  flex-shrink: 0;
+  /*flex-basis: 200px;*/
+  justify-content: space-around;
+  /*height: 200px;*/
+  margin: 24px auto;
+  text-align: center;
+  width: 50%;
+}
+
+.flex-item > button {
+  padding: 100px;
+  border-radius: 30px;
+  font-size: 4rem;
+  width: 380px;
+}
+.flex-2 > button {
+  flex: 2;
+  margin: 0 50px;
+  /*width: 870px;*/
+}
+button > label {
+  display: block;
+  font-size: 2.2rem;
+}
+
+
+.toggle-content {
+  display: none;
+}
+
+.toggle-content.is-visible {
+  display: block;
+}
+
+.slide-menu {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  height:100%;
+  width: 90%;
+}
+
+.slide-menu li {
+  list-style-type: none;
+  font-size: 36px;
+  line-height: 100px;
+}
+.slide-menu i {
+  margin-right: 18px;
+}
+
+
+.match-mountain-lion {
+  background-image: url("/images/mountain-lion.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.tiles {
+
+}
+.tile {
+  background-color: #fff;
+  margin: 2rem;
+  padding: 40px;
+  border-radius: 20px;
+  font-size: 3em;
+}
+.tile.main {
+margin-bottom: 80px;
+}
+.strong-match {
+  background-color: #018000;
+}
+.weak-match {
+  background-color: #98f398;
+}
+.percent {
+  float: right;
+
+}
+.percent:after {
+  content: "%";
+}
+
+.action-buttons {
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  padding: 0 50px 50px 50px;
+  width: 100%
+}
+.action-buttons button {
+  background-color: #fff;
+  font-size: 3em;
+  padding: 30px;
+  border-radius: 10px;
+}
+.toggle-image {
+  float: right;
+}
+
+.toggle-visibility .hidden {
+  display: none;
+}
