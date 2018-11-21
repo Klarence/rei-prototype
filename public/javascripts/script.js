@@ -15,6 +15,10 @@ function toggleImage() {
     }
 }
 function toggleEye() {
-    let el = document.getElementByClassName("fa-eye");
-
+    let el = document.querySelector(".fa-eye");
+    if (el.classList.contains("fa-eye-slash")) {
+        el.classList.remove("fa-eye-slash");
+    } else {
+        el.classList.add("fa-eye-slash");
+    }
 }

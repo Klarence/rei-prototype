@@ -55,6 +55,12 @@ a {
 .other-apps h1 {
   font-size: 48px;
 }
+.other-apps a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
 .app-item img {
   width: 210px;
 }
@@ -85,7 +91,7 @@ a {
 }
 
 .flex-item > button {
-  padding: 100px;
+  padding: 120px 0;
   border-radius: 30px;
   font-size: 4rem;
   width: 380px;
@@ -95,9 +101,13 @@ a {
   margin: 0 50px;
   /*width: 870px;*/
 }
+.flex-2 label {
+  margin: 0 130px;
+}
 button > label {
   display: block;
   font-size: 2.2rem;
+  font-weight: bold;
 }
 
 
@@ -112,15 +122,17 @@ button > label {
 .slide-menu {
   position: fixed;
   background-color: #000;
+  border-top: 1px solid #eee;
   color: #fff;
   height:100%;
   width: 90%;
+  z-index: 9000;
 }
 
 .slide-menu li {
   list-style-type: none;
-  font-size: 36px;
-  line-height: 100px;
+  font-size: 3rem;
+  line-height: 2.3em;
 }
 .slide-menu i {
   margin-right: 18px;
@@ -176,6 +188,10 @@ margin-bottom: 80px;
   float: right;
 }
 
-.toggle-visibility .hidden {
+.toggle-visibility.hidden {
   display: none;
+}
+
+.action-buttons button:first-child {
+  margin-right: 2rem;
 }
